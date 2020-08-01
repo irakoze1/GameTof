@@ -8,7 +8,9 @@ section
 {
     height: 100vh;
     background-color: rgb(39, 41, 68);
+    background-size: contain;
     font-family: sans-serif;
+    width: 100%;
 }
 .score
 {
@@ -168,3 +170,35 @@ div.fadeIn
         transform: translateY(0);
     }
 }
+
+
+@media (max-width: 720px)
+{
+    body{
+        margin: 0;
+        padding: 0;
+        background: rgb(39, 41, 68);
+        background-attachment: fixed;
+    }
+    .intro h2{
+        font-size: 35px;
+    }
+    .match h2
+    {
+        font-size: 35px;
+    }
+    .hands img
+    {
+        width: 250px;
+    }
+    .options
+    {
+        display: flex;
+        flex-direction: column;
+    }
+    .options button
+    {
+        margin: 10px;
+    }
+
+} 
